@@ -14,7 +14,7 @@ public class LoanCalculator {
     static int getRemainingAmountIn3Months(int amount) {
         int totalPayments = 0;
         double amountRemaining = amount;
-        while (totalPayments < 3 || amountRemaining <= 0){
+        while (totalPayments < 3){
             amountRemaining = amountRemaining - (amountRemaining * .1);
             totalPayments++;
         }
